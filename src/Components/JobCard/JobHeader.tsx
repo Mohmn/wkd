@@ -20,9 +20,18 @@ const JobHeader: React.FC<JobHeaderProps> = ({ logoUrl, companyName, jobTitle, c
         // flexDirection: 'column'
       }
       }>
-        <Typography variant="h6" lineHeight={0}>{companyName}</Typography>
-        <Typography variant="h6" lineHeight={1.5}>{jobTitle}</Typography>
-        <Typography variant="subtitle1">{companyLocation}</Typography>
+        <Typography variant="h6"sx={{
+          'fontSize': '1rem',
+          'fontWeight': '600',
+          'letterSpacing': '1px',
+          'marginBottom': '0.25rem',
+          'color': '#8b8b8b',
+        }} >{companyName}</Typography>
+        <Typography variant="h5" sx={{
+          'fontSize': '14px',
+          'lineHeight': '1.5',
+        }}>{jobTitle}</Typography>
+        <Typography variant="subtitle2">{companyLocation}</Typography>
       </Box>
     </div>
   </Box>

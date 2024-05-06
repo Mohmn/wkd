@@ -20,7 +20,11 @@ function getSalary(minSal: number | null, maxSal: number | null) {
 
 const JobDetails: React.FC<JobDetailsProps> = (props) => (
     <Box>
-        <Typography>
+        <Typography sx={{
+           color:  'rgb(77, 89, 106)',
+           fontSize: '1rem',
+
+        }}>
             {
                 `Estimated Salary: ${getSalary(props.minSalary, props.maxSalary)} LPA`
             }
